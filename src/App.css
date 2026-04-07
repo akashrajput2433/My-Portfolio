@@ -1,0 +1,171 @@
+.app-shell {
+  min-height: 100vh;
+}
+
+.site-header,
+.section,
+.site-footer {
+  width: min(1120px, calc(100% - 2rem));
+  margin: 0 auto;
+}
+
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 0;
+}
+
+.brand-mark {
+  font-size: 1.125rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.nav-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.section {
+  padding: 5rem 0;
+}
+
+.hero-section {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 2rem;
+  align-items: center;
+  min-height: 80vh;
+}
+
+.hero-copy,
+.stack {
+  display: grid;
+  gap: 1rem;
+}
+
+.hero-card,
+.content-card {
+  border: 1px solid #2a3146;
+  border-radius: 24px;
+  padding: 1.5rem;
+  background: rgba(15, 23, 42, 0.55);
+}
+
+.section-heading {
+  max-width: 42rem;
+  margin-bottom: 2rem;
+}
+
+.section-heading span,
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: 0.8rem;
+}
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.two-column-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.project-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.tag-list,
+.bullet-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.bullet-list {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.tag-list li,
+.bullet-list li,
+.card-actions span {
+  padding: 0.7rem 0.9rem;
+  border-radius: 999px;
+  border: 1px solid #334155;
+  background: rgba(30, 41, 59, 0.65);
+}
+
+.hero-actions,
+.card-actions,
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.button,
+.card-actions a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2.75rem;
+  padding: 0 1.2rem;
+  border-radius: 999px;
+  text-decoration: none;
+}
+
+.button-primary {
+  background: #f8fafc;
+  color: #020617;
+}
+
+.button-secondary,
+.card-actions a {
+  border: 1px solid #334155;
+}
+
+label {
+  display: grid;
+  gap: 0.5rem;
+}
+
+input,
+textarea {
+  width: 100%;
+  border: 1px solid #334155;
+  border-radius: 16px;
+  padding: 0.9rem 1rem;
+  background: rgba(15, 23, 42, 0.7);
+  color: inherit;
+  box-sizing: border-box;
+}
+
+.site-footer {
+  display: grid;
+  gap: 1rem;
+  padding: 0 0 3rem;
+}
+
+@media (max-width: 900px) {
+  .hero-section,
+  .two-column-grid,
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .site-header {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
