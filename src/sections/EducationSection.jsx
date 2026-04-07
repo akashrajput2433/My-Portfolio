@@ -11,7 +11,7 @@ function EducationSection({ education }) {
         <SectionHeading
           eyebrow="Education"
           title="Academic foundation"
-          description="A clean degree and institution section with room for highlights."
+          description="My degree, institution, and learning foundation."
         />
         <motion.div className="grid gap-6 md:grid-cols-2" {...staggerContainer(0.1)}>
         {education.map((item) => (
@@ -29,7 +29,11 @@ function EducationSection({ education }) {
               {item.details.map((detail) => (
                 <div
                   key={detail}
-                  className="rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-sm leading-7 text-slate-200"
+                  className={
+                    detail.startsWith('CGPA')
+                      ? 'rounded-2xl border border-brand-300/35 bg-brand-400/15 px-5 py-4 text-lg font-semibold leading-7 text-brand-50 shadow-glow'
+                      : 'rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-sm leading-7 text-slate-200'
+                  }
                 >
                   {detail}
                 </div>

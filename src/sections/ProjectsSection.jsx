@@ -10,8 +10,8 @@ function ProjectsSection({ projects }) {
       <div className="section-panel">
         <SectionHeading
           eyebrow="Projects"
-          title="Case-study style project showcase"
-          description="Each project will become a standout card with strong visuals, tech stack, and action buttons."
+          title="AI Project Case Studies"
+          description="Real AI products built with RAG, vector search, cloud deployment, and clean UX."
         />
         <motion.div className="grid gap-5 xl:grid-cols-2" {...staggerContainer(0.12)}>
         {projects.map((project) => (

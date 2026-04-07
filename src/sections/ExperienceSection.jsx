@@ -10,8 +10,8 @@ function ExperienceSection({ experience }) {
       <div className="section-panel">
         <SectionHeading
           eyebrow="Experience"
-          title="Timeline-based professional journey"
-          description="Internships and jobs will be shown with responsibilities and impact."
+          title="Professional journey"
+          description="Roles, responsibilities, and practical impact from real work."
         />
         <motion.div className="space-y-6" {...staggerContainer(0.14)}>
         {experience.map((item) => (

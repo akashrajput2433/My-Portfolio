@@ -10,8 +10,8 @@ function ContactSection({ contact }) {
       <div className="section-panel">
         <SectionHeading
           eyebrow="Contact"
-          title="Let recruiters and clients reach you easily"
-          description="We will style this into a premium contact block with form design in the next phase."
+          title="Let’s build something"
+          description="Reach out for roles, collaborations, or AI product discussions."
         />
         <motion.div className="grid gap-6 lg:grid-cols-[0.85fr_1.15fr]" {...staggerContainer(0.12)}>
         <motion.article className="glass-card space-y-5 p-6 md:p-8" {...staggerItem()}>

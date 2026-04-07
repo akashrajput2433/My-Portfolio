@@ -10,8 +10,8 @@ function AboutSection({ about }) {
       <div className="section-panel">
         <SectionHeading
           eyebrow="About Me"
-          title="A concise story that builds trust quickly"
-          description="This section introduces who you are, what you do, and where you want to go."
+          title="Building intelligent, useful products"
+          description="A quick snapshot of my background, goals, and engineering mindset."
         />
         <motion.div
           className="grid gap-6 lg:grid-cols-[1.1fr_0.9fr]"

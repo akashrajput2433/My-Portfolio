@@ -10,8 +10,8 @@ function SkillsSection({ skills }) {
       <div className="section-panel">
         <SectionHeading
           eyebrow="Skills"
-          title="Organized by expertise area"
-          description="We will convert these into premium cards and progress visuals in the styling phase."
+          title="Core technical strengths"
+          description="A focused mix of AI, backend, frontend, data, and developer tools."
         />
         <motion.div className="grid gap-6 md:grid-cols-2" {...staggerContainer(0.1)}>
         {skills.map((skillGroup) => (

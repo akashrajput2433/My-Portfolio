@@ -10,8 +10,8 @@ function AchievementsSection({ achievements }) {
       <div className="section-panel">
         <SectionHeading
           eyebrow="Achievements"
-          title="Certifications and milestones"
-          description="This block helps recruiters notice proof of effort, consistency, and excellence."
+          title="Certifications & milestones"
+          description="Proof of learning, consistency, and growth."
         />
         <motion.div className="glass-card p-6 md:p-8" {...staggerContainer(0.1)}>
         <ul className="grid gap-4 md:grid-cols-2">
