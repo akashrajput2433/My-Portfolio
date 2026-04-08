@@ -39,7 +39,7 @@ function HeroSection({ hero }) {
             }}
           >
             <span className="h-2.5 w-2.5 rounded-full bg-brand-400 shadow-[0_0_20px_rgba(46,196,255,0.8)]" />
-            <span className="truncate">Available for frontend opportunities</span>
+            <span className="truncate">Available for Artificial Intelligence / Data Scientist opportunities</span>
           </motion.div>
 
           <motion.div
@@ -51,7 +51,7 @@ function HeroSection({ hero }) {
           >
             <p className="inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-[0.34em] text-brand-100/90">
               <Sparkles size={16} className="text-brand-300" />
-              Software Developer Portfolio
+              AI/ML Engineer Portfolio
             </p>
             <h1 className="max-w-3xl text-4xl font-semibold leading-none tracking-[-0.05em] text-white min-[480px]:text-5xl sm:text-6xl lg:text-7xl">
               {hero.name}
@@ -131,7 +131,7 @@ function HeroSection({ hero }) {
             <div className="flex flex-col gap-4 min-[480px]:flex-row min-[480px]:items-center min-[480px]:justify-between">
               <div>
                 <p className="text-xs uppercase tracking-[0.3em] text-brand-100/80">
-                  Premium hero visual
+                  Premium Portfolio
                 </p>
                 <p className="mt-2 text-xl font-semibold text-white min-[480px]:text-2xl">
                   AI systems aesthetic

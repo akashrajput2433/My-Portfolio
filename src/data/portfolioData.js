@@ -10,8 +10,8 @@ export const portfolioData = {
     { label: 'Contact', href: '#contact' },
   ],
   hero: {
-    name: 'Your Name',
-    role: 'Software Developer',
+    name: 'Akash Singh',
+    role: 'AI/ML Engineer',
     tagline:
       'I build polished digital experiences that feel premium, fast, and recruiter-ready.',
     summary:
@@ -19,7 +19,7 @@ export const portfolioData = {
     stats: [
       { label: 'Projects Designed', value: '06+' },
       { label: 'Core Tech Stack', value: '10+' },
-      { label: 'Focus', value: 'Frontend UX' },
+      { label: 'Focus', value: 'AI/ML Systems' },
     ],
     primaryCta: { label: 'View Projects', href: '#projects' },
     secondaryCta: { label: 'Contact Me', href: '#contact' },
@@ -38,7 +38,7 @@ export const portfolioData = {
     ],
     quickFacts: [
       { label: 'Location', value: 'India' },
-      { label: 'Preferred Role', value: 'Software Developer' },
+      { label: 'Preferred Role', value: 'AI/ML Engineer' },
       { label: 'Work Style', value: 'Clean, scalable, collaborative' },
     ],
   },
@@ -122,7 +122,7 @@ export const portfolioData = {
         'Runs on a responsive cloud-hosted interface with live access 24/7.',
       ],
       impact:
-        'Built and deployed a real-world RAG system end-to-end, combining retrieval, vector search, LLM inference, and cloud deployment into a usable public product.',
+        'Built and deployed a real-world RAG system end-to-end, combining retrieval, vector search, LLM inference, and cloud deployment into a usable public product. Designed to deliver trustworthy document intelligence with a fast, user-friendly experience.',
       githubUrl: 'https://github.com/akashrajput2433/WHISPER-DOC',
       liveUrl: 'https://whisper-doc.onrender.com/',
     },
@@ -140,10 +140,39 @@ export const portfolioData = {
   ],
   experience: [
     {
+      role: 'Associate Software Engineer',
+      company: 'Moba Mobile Automation Pvt. Ltd.',
+      companyUrl: 'https://moba-automation.co.in/',
+      duration: 'Aug 2025 - Mar 2026',
+      summary:
+        'Built secure, scalable enterprise modules using ASP.NET Core, MVC, and MS SQL Server with a strong focus on performance, access control, and admin efficiency.',
+      highlights: [
+        'Built secure enterprise modules with ASP.NET Core, MVC, and MS SQL Server.',
+        'Focused strongly on performance tuning, access control, and secure workflows.',
+        'Delivered admin-efficient architecture for scalable day-to-day operations.',
+      ],
+      responsibilities: [
+        'Architected a production-grade 3-tier web application using ASP.NET Core Web API (.NET 10), MVC frontend, and MS SQL Server.',
+        'Implemented 30+ stored procedures for CRUD workflows and improved average query execution time by 35% across 20+ database modules.',
+        'Engineered JWT authentication, session handling, dynamic role-permission control, and Google reCAPTCHA v2 for secure access across 10+ modules.',
+      ],
+      achievements: [
+        'Delivered Company, Role, and User management modules with server-side pagination and real-time validation.',
+        'Built soft-delete with admin-controlled reactivation and SHA-256 password hashing for safer user lifecycle management.',
+        'Reduced manual admin overhead by 40% while supporting 200+ user records in production workflows.',
+        'Achieved 100% elimination of unauthorized access incidents through secure authentication and permission design.',
+      ],
+    },
+    {
       role: 'Frontend Developer Intern',
       company: 'Company Name',
       duration: '2025 - Present',
       summary: 'Worked on responsive interface implementation and collaboration across development tasks.',
+      highlights: [
+        'Built modern responsive UI screens for web applications.',
+        'Worked closely with designers and developers on delivery.',
+        'Improved page-level usability and visual consistency.',
+      ],
       responsibilities: [
         'Built responsive UI screens for modern web applications.',
         'Collaborated with designers and developers on feature delivery.',
@@ -182,7 +211,7 @@ export const portfolioData = {
     email: 'your.email@example.com',
     linkedin: 'https://linkedin.com/in/your-profile',
     github: 'https://github.com/your-username',
-    availability: 'Open to internships, freelance work, and frontend developer roles.',
+    availability: 'Available for Artificial Intelligence / Data Scientist opportunities.',
     responseTime: 'Usually responds within 24 hours.',
     socialLinks: [
       { label: 'GitHub', href: 'https://github.com/your-username' },
