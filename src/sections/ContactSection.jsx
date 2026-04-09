@@ -1,5 +1,6 @@
 import SectionHeading from '../components/SectionHeading'
 import { motion } from 'framer-motion'
+import { ArrowUpRight, Globe, Mail } from 'lucide-react'
 import AnimatedSection, { staggerContainer, staggerItem } from '../components/AnimatedSection'
 import SectionSideNetwork from '../components/SectionSideNetwork'
 
@@ -17,7 +18,7 @@ function ContactSection({ contact }) {
         <motion.article className="glass-card space-y-5 p-6 md:p-8" {...staggerItem()}>
           <h3 className="text-2xl font-semibold text-white">Contact Details</h3>
           <p className="leading-7 text-slate-300">
-            Clear contact points help recruiters convert interest into interviews.
+            Always open to meaningful conversations around AI, products, and high-impact opportunities.
           </p>
           <div className="rounded-[24px] border border-brand-300/15 bg-brand-400/10 px-4 py-4">
             <p className="text-sm leading-7 text-brand-50">{contact.availability}</p>
@@ -26,26 +27,47 @@ function ContactSection({ contact }) {
             </p>
           </div>
           <a
-            className="block rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-slate-200 transition hover:border-brand-300/40 hover:bg-brand-400/10"
+            className="group flex items-center justify-between gap-3 rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-slate-200 transition hover:border-brand-300/40 hover:bg-brand-400/10"
             href={`mailto:${contact.email}`}
           >
-            {contact.email}
+            <span className="inline-flex items-center gap-3">
+              <Mail size={16} className="text-brand-200" />
+              <span>{contact.email}</span>
+            </span>
+            <span className="inline-flex items-center gap-1 text-[0.72rem] uppercase tracking-[0.18em] text-brand-100/80 transition group-hover:text-brand-50">
+              Email
+              <ArrowUpRight size={14} />
+            </span>
           </a>
           <a
-            className="block rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-slate-200 transition hover:border-brand-300/40 hover:bg-brand-400/10"
+            className="group flex items-center justify-between gap-3 rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-slate-200 transition hover:border-brand-300/40 hover:bg-brand-400/10"
             href={contact.linkedin}
             target="_blank"
             rel="noreferrer"
           >
-            LinkedIn
+            <span className="inline-flex items-center gap-3">
+              <Globe size={16} className="text-brand-200" />
+              <span>LinkedIn</span>
+            </span>
+            <span className="inline-flex items-center gap-1 text-[0.72rem] uppercase tracking-[0.18em] text-brand-100/80 transition group-hover:text-brand-50">
+              Visit
+              <ArrowUpRight size={14} />
+            </span>
           </a>
           <a
-            className="block rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-slate-200 transition hover:border-brand-300/40 hover:bg-brand-400/10"
+            className="group flex items-center justify-between gap-3 rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-slate-200 transition hover:border-brand-300/40 hover:bg-brand-400/10"
             href={contact.github}
             target="_blank"
             rel="noreferrer"
           >
-            GitHub
+            <span className="inline-flex items-center gap-3">
+              <Globe size={16} className="text-brand-200" />
+              <span>GitHub</span>
+            </span>
+            <span className="inline-flex items-center gap-1 text-[0.72rem] uppercase tracking-[0.18em] text-brand-100/80 transition group-hover:text-brand-50">
+              Visit
+              <ArrowUpRight size={14} />
+            </span>
           </a>
         </motion.article>
         <motion.form className="glass-card space-y-5 p-6 md:p-8" {...staggerItem(36)}>

@@ -208,15 +208,15 @@ export const portfolioData = {
     },
   ],
   contact: {
-    email: 'your.email@example.com',
-    linkedin: 'https://linkedin.com/in/your-profile',
-    github: 'https://github.com/your-username',
-    availability: 'Available for Artificial Intelligence / Data Scientist opportunities.',
+    email: 'akashdos161099@gmail.com',
+    linkedin: 'https://www.linkedin.com/in/akashrajput2433/',
+    github: 'https://github.com/akashrajput2433',
+    availability: 'Available for AI / Data Scientist opportunities',
     responseTime: 'Usually responds within 24 hours.',
     socialLinks: [
-      { label: 'GitHub', href: 'https://github.com/your-username' },
-      { label: 'LinkedIn', href: 'https://linkedin.com/in/your-profile' },
-      { label: 'Email', href: 'mailto:your.email@example.com' },
+      { label: 'GitHub', href: 'https://github.com/akashrajput2433' },
+      { label: 'LinkedIn', href: 'https://www.linkedin.com/in/akashrajput2433/' },
+      { label: 'Email', href: 'mailto:akashdos161099@gmail.com' },
     ],
   },
 }
