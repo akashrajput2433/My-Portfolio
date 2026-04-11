@@ -26,19 +26,21 @@ export const portfolioData = {
   },
   about: {
     intro:
-      'I am a developer focused on creating clean, modern, and scalable web applications.',
+      'An AI/ML Engineer and Software Developer with 1+ years of experience building secure, scalable, and high-impact software solutions.',
     background:
-      'My background section will highlight your journey, strengths, and technical identity in a concise, high-impact way.',
+      'My work spans enterprise application development, backend architecture, APIs, and AI-powered systems, with hands-on experience in Java, C#, Python, ASP.NET Core, SQL Server, and modern cloud-based workflows.',
     objective:
-      'My goal is to contribute to impactful products, keep growing as an engineer, and solve real-world problems with thoughtful software.',
+      'I aim to contribute to impactful teams where I can build intelligent, data-driven products and grow at the intersection of AI, software engineering, and real-world problem solving.',
     highlights: [
-      'Frontend-first mindset with strong attention to visual polish and usability.',
-      'Comfortable translating raw ideas into structured, production-ready UI.',
-      'Interested in modern web products, developer tooling, and user-centric experiences.',
+      'Experienced in building production-ready systems with strong attention to performance, security, and clean architecture.',
+      'Comfortable working across backend engineering, AI workflows, APIs, databases, and modern product-focused development.',
+      'Driven by continuous learning, practical problem solving, and delivering technology that creates measurable impact.',
     ],
     quickFacts: [
       { label: 'Location', value: 'India' },
-      { label: 'Preferred Role', value: 'AI/ML Engineer' },
+      { label: 'Preferred Role', value: 'AI/ML Engineer / Data Scientist' },
+      { label: 'Experience', value: '1+ Years' },
+      { label: 'Specialization', value: 'AI, ML & Data-Driven Systems' },
       { label: 'Work Style', value: 'Clean, scalable, collaborative' },
     ],
   },
@@ -164,21 +166,52 @@ export const portfolioData = {
       ],
     },
     {
-      role: 'Frontend Developer Intern',
-      company: 'Company Name',
-      duration: '2025 - Present',
-      summary: 'Worked on responsive interface implementation and collaboration across development tasks.',
+      role: 'Associate Software Engineer',
+      company: 'Mphasis',
+      companyUrl: 'https://www.mphasis.com/home.html',
+      duration: '03/2025 - 07/2025',
+      summary:
+        'Contributed to the ITest Online quiz platform in a fast-paced Agile team, focusing on delivery quality, stable releases, and measurable engineering improvement.',
       highlights: [
-        'Built modern responsive UI screens for web applications.',
-        'Worked closely with designers and developers on delivery.',
-        'Improved page-level usability and visual consistency.',
+        'Worked in a 5-member Agile team on the ITest Online quiz platform at a leading IT services company.',
+        'Contributed to the project ranking among the top 3 company projects through reliable feature delivery.',
+        'Improved release stability and code quality through Git-based workflows and systematic debugging.',
       ],
       responsibilities: [
-        'Built responsive UI screens for modern web applications.',
-        'Collaborated with designers and developers on feature delivery.',
-        'Improved usability and consistency across pages.',
+        'Developed and supported the ITest Online quiz platform in collaboration with a 5-member Agile team.',
+        'Used Git version control and debugging workflows to improve code quality by 25%.',
+        'Helped stabilize releases by 30% through disciplined testing, issue resolution, and timely delivery.',
       ],
-      achievements: ['Delivered cleaner UI patterns.', 'Helped improve visual consistency.'],
+      achievements: [
+        'Achieved 91% project evaluation score for delivery quality and execution.',
+        'Earned Performance Excellence recognition for on-time delivery.',
+        'Contributed to placing the project among the top 3 internal company projects.',
+        'Built strong hands-on experience in Agile collaboration, debugging, and release discipline.',
+      ],
+    },
+    {
+      role: 'Java Intern / Junior Java Developer',
+      company: 'Aicons Engineering Pvt. Ltd.',
+      companyUrl: 'https://aicons.in/',
+      duration: '01/2024 - 02/2025',
+      summary:
+        'Built a strong foundation in Core Java development while contributing to backend logic, data structure implementation, SQL integration, and team-based software delivery.',
+      highlights: [
+        'Strengthened Core Java proficiency through hands-on work with OOP, exception handling, and multithreading.',
+        'Improved problem-solving speed by implementing arrays, stacks, queues, and linked lists in programming tasks.',
+        'Worked on backend logic, Java-MySQL integration, and reliable solution delivery within team workflows.',
+      ],
+      responsibilities: [
+        'Developed backend logic using Core Java with OOP, exception handling, and multithreading concepts.',
+        'Integrated MySQL databases with Java applications and wrote efficient SQL queries for data management.',
+        'Assisted in debugging, testing, and SDLC processes while collaborating with team members to deliver reliable solutions.',
+      ],
+      achievements: [
+        'Enhanced coding efficiency by 30% through hands-on Core Java implementation.',
+        'Improved problem-solving speed by 25% using practical data structure applications.',
+        'Supported optimized backend performance through structured Java logic and data handling.',
+        'Gained strong early-career exposure to debugging, testing, databases, and real-world development practices.',
+      ],
     },
   ],
   education: [
@@ -195,16 +228,31 @@ export const portfolioData = {
       details: ['Percentage: 74.4%'],
     },
   ],
-  achievements: [
+  certifications: [
     {
-      title: 'Certification Placeholder',
-      issuer: 'Platform / Organization',
-      note: 'Add your certifications, hackathon wins, coding achievements, or awards here.',
+      title: 'Become Experts in Python | Exercises | Projects | Quiz',
+      issuer: 'Udemy',
+      note: 'Completed a 10.5-hour Python certification focused on practical exercises, hands-on projects, and quiz-based learning to strengthen problem-solving and applied programming skills.',
+      link: 'https://www.udemy.com/certificate/UC-d0b951ad-461b-429e-b765-73eb111fac3b/',
     },
     {
-      title: 'Achievement Placeholder',
-      issuer: 'Competition / Milestone',
-      note: 'This section can also include DSA milestones or competition rankings.',
+      title: 'Certification Placeholder 02',
+      issuer: 'Platform / Organization',
+      note: 'Add your second certification here to showcase continuous learning and technical growth.',
+      link: '',
+    },
+    {
+      title: 'Certification Placeholder 03',
+      issuer: 'Platform / Organization',
+      note: 'Add your third certification here for a stronger and more complete certification profile.',
+      link: '',
+    },
+  ],
+  achievements: [
+    {
+      title: 'Performance Excellence Recognition',
+      issuer: 'Mphasis',
+      note: 'Achieved 91% project evaluation score and earned Performance Excellence recognition for on-time delivery.',
     },
   ],
   contact: {

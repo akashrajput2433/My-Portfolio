@@ -152,19 +152,23 @@ function ProjectsSection({ projects }) {
           </motion.div>
 
           {hasMultipleProjects ? (
-            <motion.div className="flex flex-wrap items-center justify-center gap-2" {...staggerItem(40)}>
+            <motion.div className="section-switcher flex flex-wrap items-center justify-center gap-3" {...staggerItem(40)}>
               {projects.map((project, index) => (
                 <motion.button
                   key={project.name}
-                  className={`h-2.5 rounded-full transition-all ${
-                    index === activeIndex ? 'w-10 bg-brand-300' : 'w-2.5 bg-slate-500/50 hover:bg-brand-200/70'
+                  className={`selector-pill rounded-full border px-4 py-2 text-xs uppercase tracking-[0.22em] transition ${
+                    index === activeIndex
+                      ? 'is-active border-brand-300/45 bg-brand-400/14 shadow-[0_10px_30px_rgba(56,189,248,0.14)]'
+                      : 'border-white/10 bg-white/5 hover:border-brand-300/28 hover:bg-brand-400/8'
                   }`}
                   type="button"
                   aria-label={`Show ${project.name}`}
                   onClick={() => setActiveIndex(index)}
-                  whileHover={{ scale: 1.08 }}
-                  whileTap={{ scale: 0.94 }}
-                />
+                  whileHover={{ y: -2 }}
+                  whileTap={{ scale: 0.97 }}
+                >
+                  {project.name}
+                </motion.button>
               ))}
             </motion.div>
           ) : null}

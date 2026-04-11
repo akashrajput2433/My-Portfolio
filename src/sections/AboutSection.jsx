@@ -10,7 +10,7 @@ function AboutSection({ about }) {
       <div className="section-panel">
         <SectionHeading
           eyebrow="About Me"
-          title="Building intelligent, useful products"
+          title="Building intelligent, Useful products"
           description="A quick snapshot of my background, goals, and engineering mindset."
         />
         <motion.div

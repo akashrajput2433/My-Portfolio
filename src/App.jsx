@@ -14,14 +14,12 @@ import AchievementsSection from './sections/AchievementsSection'
 import ContactSection from './sections/ContactSection'
 
 function App() {
-  const [theme, setTheme] = useState('dark')
+  const [theme, setTheme] = useState('light')
   const [isLoading, setIsLoading] = useState(true)
 
   useEffect(() => {
     const savedTheme = window.localStorage.getItem('portfolio-theme')
-    const preferredTheme =
-      savedTheme ||
-      (window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark')
+    const preferredTheme = savedTheme || 'light'
 
     setTheme(preferredTheme)
     document.documentElement.dataset.theme = preferredTheme
@@ -85,7 +83,7 @@ function App() {
           <ProjectsSection projects={portfolioData.projects} />
           <ExperienceSection experience={portfolioData.experience} />
           <EducationSection education={portfolioData.education} />
-          <AchievementsSection achievements={portfolioData.achievements} />
+          <AchievementsSection certifications={portfolioData.certifications} achievements={portfolioData.achievements} />
           <ContactSection contact={portfolioData.contact} />
         </main>
         <Footer socialLinks={portfolioData.contact.socialLinks} />

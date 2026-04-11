@@ -166,14 +166,14 @@ function ExperienceSection({ experience }) {
           </motion.div>
 
           {hasMultipleItems ? (
-            <motion.div className="flex flex-wrap items-center justify-center gap-3" {...staggerItem(40)}>
+            <motion.div className="section-switcher flex flex-wrap items-center justify-center gap-3" {...staggerItem(40)}>
               {experience.map((item, index) => (
                 <motion.button
                   key={`${item.role}-${item.company}`}
-                  className={`rounded-full border px-4 py-2 text-xs uppercase tracking-[0.22em] transition ${
+                  className={`selector-pill rounded-full border px-4 py-2 text-xs uppercase tracking-[0.22em] transition ${
                     index === activeIndex
-                      ? 'border-brand-300/40 bg-brand-400/12 text-brand-50'
-                      : 'border-white/10 bg-white/5 text-slate-400 hover:border-brand-300/25 hover:text-slate-200'
+                      ? 'is-active border-brand-300/40 bg-brand-400/12'
+                      : 'border-white/10 bg-white/5 hover:border-brand-300/25'
                   }`}
                   type="button"
                   onClick={() => setActiveIndex(index)}
