@@ -5,6 +5,22 @@ import AnimatedSection, { staggerContainer, staggerItem } from '../components/An
 import SectionSideNetwork from '../components/SectionSideNetwork'
 
 function ContactSection({ contact }) {
+  const handleSubmit = (event) => {
+    event.preventDefault()
+
+    const formData = new FormData(event.currentTarget)
+    const name = formData.get('name')?.toString().trim() ?? ''
+    const email = formData.get('email')?.toString().trim() ?? ''
+    const message = formData.get('message')?.toString().trim() ?? ''
+
+    const subject = encodeURIComponent(`Portfolio Inquiry from ${name || 'Website Visitor'}`)
+    const body = encodeURIComponent(
+      `Name: ${name || 'Not provided'}\nEmail: ${email || 'Not provided'}\n\nMessage:\n${message || 'Hello Akash,'}`
+    )
+
+    window.location.href = `mailto:${contact.email}?subject=${subject}&body=${body}`
+  }
+
   return (
     <AnimatedSection id="contact" className="section-shell section-divider section-tone-cool">
       <SectionSideNetwork variant="cool" />
@@ -70,11 +86,11 @@ function ContactSection({ contact }) {
             </span>
           </a>
         </motion.article>
-        <motion.form className="glass-card space-y-5 p-6 md:p-8" {...staggerItem(36)}>
+        <motion.form className="glass-card space-y-5 p-6 md:p-8" onSubmit={handleSubmit} {...staggerItem(36)}>
           <label>
             <span className="mb-2 block text-sm text-slate-300">Name</span>
             <input
-              className="w-full rounded-2xl border border-white/10 bg-slate-950/60 px-4 py-3 text-slate-100 outline-none transition focus:border-brand-300/50"
+              className="theme-input w-full rounded-2xl px-4 py-3 outline-none transition focus:border-brand-300/50"
               type="text"
               name="name"
               placeholder="Enter your name"
@@ -83,7 +99,7 @@ function ContactSection({ contact }) {
           <label>
             <span className="mb-2 block text-sm text-slate-300">Email</span>
             <input
-              className="w-full rounded-2xl border border-white/10 bg-slate-950/60 px-4 py-3 text-slate-100 outline-none transition focus:border-brand-300/50"
+              className="theme-input w-full rounded-2xl px-4 py-3 outline-none transition focus:border-brand-300/50"
               type="email"
               name="email"
               placeholder="Enter your email"
@@ -92,7 +108,7 @@ function ContactSection({ contact }) {
           <label>
             <span className="mb-2 block text-sm text-slate-300">Message</span>
             <textarea
-              className="w-full rounded-2xl border border-white/10 bg-slate-950/60 px-4 py-3 text-slate-100 outline-none transition focus:border-brand-300/50"
+              className="theme-input w-full rounded-2xl px-4 py-3 outline-none transition focus:border-brand-300/50"
               name="message"
               rows="5"
               placeholder="Write your message"
@@ -100,7 +116,7 @@ function ContactSection({ contact }) {
           </label>
           <motion.button
             className="primary-button w-full sm:w-fit"
-            type="button"
+            type="submit"
             whileHover={{ y: -3, scale: 1.01 }}
             whileTap={{ scale: 0.98 }}
           >

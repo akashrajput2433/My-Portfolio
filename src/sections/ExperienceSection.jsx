@@ -152,7 +152,7 @@ function ExperienceSection({ experience }) {
                         {activeExperience.achievements.map((achievement) => (
                           <div
                             key={achievement}
-                            className="dark-surface-soft rounded-2xl px-4 py-3 text-sm leading-7 text-slate-200"
+                            className="dark-surface-soft rounded-2xl px-4 py-3 text-justify text-sm leading-7 text-slate-200"
                           >
                             {achievement}
                           </div>

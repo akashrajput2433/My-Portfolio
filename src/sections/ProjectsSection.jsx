@@ -86,7 +86,7 @@ function ProjectsSection({ projects }) {
                         {activeProject.category}
                       </span>
                     </div>
-                    <div className="flex min-h-[8.5rem] items-center rounded-[24px] border border-brand-300/20 bg-brand-400/10 px-5 py-5 text-base leading-7 text-brand-50">
+                    <div className="flex min-h-[8.5rem] items-center rounded-[24px] border border-brand-300/20 bg-brand-400/10 px-5 py-5 text-justify text-base leading-7 text-brand-50">
                       {activeProject.impact}
                     </div>
                     <div className="flex flex-col gap-3 pt-1 min-[480px]:flex-row min-[480px]:flex-wrap">

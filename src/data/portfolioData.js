@@ -13,9 +13,9 @@ export const portfolioData = {
     name: 'Akash Singh',
     role: 'AI/ML Engineer',
     tagline:
-      'I build polished digital experiences that feel premium, fast, and recruiter-ready.',
+      'I design and engineer intelligent, production-ready digital solutions with a strong focus on performance, usability, and real-world impact.',
     summary:
-      'This portfolio will be fully personalized with your projects, achievements, and career story in the next steps.',
+      'Blending AI/ML, backend engineering, and clean product thinking to build scalable systems that solve meaningful problems and create measurable value.',
     stats: [
       { label: 'Projects Designed', value: '06+' },
       { label: 'Core Tech Stack', value: '10+' },
@@ -236,10 +236,10 @@ export const portfolioData = {
       link: 'https://www.udemy.com/certificate/UC-d0b951ad-461b-429e-b765-73eb111fac3b/',
     },
     {
-      title: 'Certification Placeholder 02',
-      issuer: 'Platform / Organization',
-      note: 'Add your second certification here to showcase continuous learning and technical growth.',
-      link: '',
+      title: 'Claude Code in Action',
+      issuer: 'Anthropic',
+      note: 'Completed the Claude Code in Action certification, strengthening hands-on understanding of AI-assisted development workflows, modern coding productivity, and practical usage of Claude for real engineering tasks.',
+      link: 'https://verify.skilljar.com/c/hf4vd6h82yio',
     },
     {
       title: 'Certification Placeholder 03',
