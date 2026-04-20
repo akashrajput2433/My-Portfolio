@@ -17,10 +17,10 @@ function AboutSection({ about }) {
           className="grid gap-6 lg:grid-cols-[1.1fr_0.9fr]"
           {...staggerContainer()}
         >
-          <motion.div className="glass-card space-y-5 p-6 md:p-8" {...staggerItem()}>
+          <motion.div className="glass-card min-w-0 space-y-5 p-5 md:p-8" {...staggerItem()}>
           <p className="text-lg leading-8 text-slate-200">{about.intro}</p>
-          <p className="leading-8 text-slate-300">{about.background}</p>
-          <p className="leading-8 text-slate-400">{about.objective}</p>
+          <p className="text-left leading-8 text-slate-300">{about.background}</p>
+          <p className="text-left leading-8 text-slate-400">{about.objective}</p>
           <div className="grid gap-3 pt-3">
             {about.highlights.map((highlight) => (
               <motion.div
@@ -33,7 +33,7 @@ function AboutSection({ about }) {
             ))}
           </div>
           </motion.div>
-          <motion.div className="glass-card grid gap-4 p-6 md:p-8" {...staggerItem(40)}>
+          <motion.div className="glass-card grid min-w-0 gap-4 p-5 md:p-8" {...staggerItem(40)}>
           {about.quickFacts.map((fact) => (
             <motion.div
               key={fact.label}

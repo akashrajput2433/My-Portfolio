@@ -31,62 +31,62 @@ function ContactSection({ contact }) {
           description="Reach out for roles, collaborations, or AI product discussions."
         />
         <motion.div className="grid gap-6 lg:grid-cols-[0.85fr_1.15fr]" {...staggerContainer(0.12)}>
-        <motion.article className="glass-card space-y-5 p-6 md:p-8" {...staggerItem()}>
+        <motion.article className="glass-card min-w-0 space-y-5 p-5 md:p-8" {...staggerItem()}>
           <h3 className="text-2xl font-semibold text-white">Contact Details</h3>
-          <p className="leading-7 text-slate-300">
+          <p className="text-left leading-7 text-slate-300">
             Always open to meaningful conversations around AI, products, and high-impact opportunities.
           </p>
           <div className="rounded-[24px] border border-brand-300/15 bg-brand-400/10 px-4 py-4">
-            <p className="text-sm leading-7 text-brand-50">{contact.availability}</p>
-            <p className="mt-2 text-xs uppercase tracking-[0.24em] text-brand-100/80">
+            <p className="text-left text-sm leading-7 text-brand-50">{contact.availability}</p>
+            <p className="mt-2 text-xs uppercase tracking-[0.18em] text-brand-100/80 sm:tracking-[0.24em]">
               {contact.responseTime}
             </p>
           </div>
           <a
-            className="group flex items-center justify-between gap-3 rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-slate-200 transition hover:border-brand-300/40 hover:bg-brand-400/10"
+            className="group flex flex-col items-start gap-2 rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-slate-200 transition hover:border-brand-300/40 hover:bg-brand-400/10 sm:flex-row sm:items-center sm:justify-between sm:gap-3"
             href={`mailto:${contact.email}`}
           >
-            <span className="inline-flex items-center gap-3">
+            <span className="inline-flex min-w-0 items-center gap-3">
               <Mail size={16} className="text-brand-200" />
-              <span>{contact.email}</span>
+              <span className="break-all text-left">{contact.email}</span>
             </span>
-            <span className="inline-flex items-center gap-1 text-[0.72rem] uppercase tracking-[0.18em] text-brand-100/80 transition group-hover:text-brand-50">
+            <span className="inline-flex items-center gap-1 pl-7 text-[0.72rem] uppercase tracking-[0.18em] text-brand-100/80 transition group-hover:text-brand-50 sm:pl-0">
               Email
               <ArrowUpRight size={14} />
             </span>
           </a>
           <a
-            className="group flex items-center justify-between gap-3 rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-slate-200 transition hover:border-brand-300/40 hover:bg-brand-400/10"
+            className="group flex flex-col items-start gap-2 rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-slate-200 transition hover:border-brand-300/40 hover:bg-brand-400/10 sm:flex-row sm:items-center sm:justify-between sm:gap-3"
             href={contact.linkedin}
             target="_blank"
             rel="noreferrer"
           >
-            <span className="inline-flex items-center gap-3">
+            <span className="inline-flex min-w-0 items-center gap-3">
               <Globe size={16} className="text-brand-200" />
               <span>LinkedIn</span>
             </span>
-            <span className="inline-flex items-center gap-1 text-[0.72rem] uppercase tracking-[0.18em] text-brand-100/80 transition group-hover:text-brand-50">
+            <span className="inline-flex items-center gap-1 pl-7 text-[0.72rem] uppercase tracking-[0.18em] text-brand-100/80 transition group-hover:text-brand-50 sm:pl-0">
               Visit
               <ArrowUpRight size={14} />
             </span>
           </a>
           <a
-            className="group flex items-center justify-between gap-3 rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-slate-200 transition hover:border-brand-300/40 hover:bg-brand-400/10"
+            className="group flex flex-col items-start gap-2 rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-slate-200 transition hover:border-brand-300/40 hover:bg-brand-400/10 sm:flex-row sm:items-center sm:justify-between sm:gap-3"
             href={contact.github}
             target="_blank"
             rel="noreferrer"
           >
-            <span className="inline-flex items-center gap-3">
+            <span className="inline-flex min-w-0 items-center gap-3">
               <Globe size={16} className="text-brand-200" />
               <span>GitHub</span>
             </span>
-            <span className="inline-flex items-center gap-1 text-[0.72rem] uppercase tracking-[0.18em] text-brand-100/80 transition group-hover:text-brand-50">
+            <span className="inline-flex items-center gap-1 pl-7 text-[0.72rem] uppercase tracking-[0.18em] text-brand-100/80 transition group-hover:text-brand-50 sm:pl-0">
               Visit
               <ArrowUpRight size={14} />
             </span>
           </a>
         </motion.article>
-        <motion.form className="glass-card space-y-5 p-6 md:p-8" onSubmit={handleSubmit} {...staggerItem(36)}>
+        <motion.form className="glass-card min-w-0 space-y-5 p-5 md:p-8" onSubmit={handleSubmit} {...staggerItem(36)}>
           <label>
             <span className="mb-2 block text-sm text-slate-300">Name</span>
             <input

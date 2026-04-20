@@ -30,11 +30,11 @@ function ExperienceSection({ experience }) {
         <motion.div className="space-y-4" {...staggerContainer(0.14)}>
           <motion.div className="glass-card overflow-hidden p-4 sm:p-5 md:p-6" {...staggerItem()}>
             <div className="mb-4 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
-              <div className="flex items-center gap-3">
+              <div className="flex min-w-0 items-center gap-3">
                 <div className="flex h-12 w-12 items-center justify-center rounded-2xl border border-brand-300/20 bg-brand-400/10 text-brand-50">
                   <BriefcaseBusiness size={20} />
                 </div>
-                <div>
+                <div className="min-w-0">
                   <p className="text-xs uppercase tracking-[0.28em] text-brand-100/80">Latest experience first</p>
                   <p className="mt-1 text-sm text-slate-400">
                     {String(activeIndex + 1).padStart(2, '0')} / {String(experience.length).padStart(2, '0')}
@@ -72,24 +72,24 @@ function ExperienceSection({ experience }) {
               <AnimatePresence mode="wait">
                 <motion.article
                   key={`${activeExperience.role}-${activeExperience.company}`}
-                  className="grid gap-5 lg:grid-cols-[0.44fr_0.56fr]"
+                  className="grid min-w-0 gap-5 lg:grid-cols-[0.44fr_0.56fr]"
                   initial={{ opacity: 0, y: 26, filter: 'blur(8px)' }}
                   animate={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
                   exit={{ opacity: 0, y: -26, filter: 'blur(8px)' }}
                   transition={{ duration: 0.45, ease: [0.22, 1, 0.36, 1] }}
                 >
-                  <div className="relative space-y-4 lg:pl-10">
+                  <div className="relative min-w-0 space-y-4 lg:pl-10">
                     <div className="hidden lg:absolute lg:left-0 lg:top-1 flex h-8 w-8 items-center justify-center rounded-full border border-brand-300/30 bg-brand-400/15 text-brand-50">
                       <span className="h-2.5 w-2.5 rounded-full bg-brand-300" />
                     </div>
                     <div className="rounded-[26px] border border-brand-300/20 bg-gradient-to-br from-brand-400/12 to-transparent p-5">
                       <p className="text-xs uppercase tracking-[0.26em] text-brand-100/80">Current role focus</p>
-                      <h3 className="mt-3 text-2xl font-semibold text-white">{activeExperience.role}</h3>
+                      <h3 className="mt-3 break-words text-xl font-semibold text-white sm:text-2xl">{activeExperience.role}</h3>
                       <div className="mt-4 grid gap-3">
                         <div className="rounded-2xl border border-white/10 bg-white/5 px-4 py-3">
                           {activeExperience.companyUrl ? (
                             <a
-                              className="group inline-flex w-full items-center justify-between gap-3 rounded-xl border border-brand-300/15 bg-brand-400/10 px-3 py-2 text-sm text-slate-100 transition hover:border-brand-300/35 hover:bg-brand-400/15 hover:text-brand-50"
+                              className="group inline-flex w-full flex-col items-start gap-2 rounded-xl border border-brand-300/15 bg-brand-400/10 px-3 py-2 text-sm text-slate-100 transition hover:border-brand-300/35 hover:bg-brand-400/15 hover:text-brand-50 sm:flex-row sm:items-center sm:justify-between sm:gap-3"
                               href={activeExperience.companyUrl}
                               target="_blank"
                               rel="noreferrer"
@@ -98,7 +98,7 @@ function ExperienceSection({ experience }) {
                                 <Building2 size={16} className="text-brand-200" />
                                 <span className="truncate sm:whitespace-normal">{activeExperience.company}</span>
                               </span>
-                              <span className="inline-flex items-center gap-1 text-[0.72rem] uppercase tracking-[0.18em] text-brand-100/80 transition group-hover:text-brand-50">
+                              <span className="inline-flex items-center gap-1 pl-7 text-[0.72rem] uppercase tracking-[0.18em] text-brand-100/80 transition group-hover:text-brand-50 sm:pl-0">
                                 Visit
                                 <ArrowUpRight size={14} />
                               </span>
@@ -128,7 +128,7 @@ function ExperienceSection({ experience }) {
                     </div>
                   </div>
 
-                  <div className="grid gap-4">
+                  <div className="grid min-w-0 gap-4">
                     <div className="space-y-2">
                       <strong className="text-xs uppercase tracking-[0.24em] text-slate-400">
                         Responsibilities

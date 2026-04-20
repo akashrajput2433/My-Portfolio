@@ -32,14 +32,14 @@ function HeroSection({ hero }) {
           }}
         >
           <motion.div
-            className="inline-flex items-center gap-3 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-slate-200 backdrop-blur"
+            className="inline-flex max-w-full items-start gap-3 rounded-[22px] border border-white/10 bg-white/5 px-4 py-2 text-sm text-slate-200 backdrop-blur sm:items-center sm:rounded-full"
             variants={{
               hidden: { opacity: 0, y: 20 },
               show: { opacity: 1, y: 0, transition: { duration: 0.65 } },
             }}
           >
             <span className="h-2.5 w-2.5 rounded-full bg-brand-400 shadow-[0_0_20px_rgba(46,196,255,0.8)]" />
-            <span className="truncate">Available for Artificial Intelligence / Data Scientist opportunities</span>
+            <span className="text-left leading-6 sm:truncate">Available for Artificial Intelligence / Data Scientist opportunities</span>
           </motion.div>
 
           <motion.div
@@ -116,7 +116,7 @@ function HeroSection({ hero }) {
         </motion.div>
 
         <motion.div
-          className="glass-card relative overflow-hidden p-4 sm:p-8"
+          className="glass-card relative min-w-0 overflow-hidden p-4 sm:p-8"
           initial={{ opacity: 0, x: 40, scale: 0.96 }}
           animate={{ opacity: 1, x: 0, scale: 1 }}
           transition={{ duration: 0.8, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
@@ -128,7 +128,7 @@ function HeroSection({ hero }) {
             animate={{ y: [0, -6, 0] }}
             transition={{ duration: 8, repeat: Infinity, ease: 'easeInOut' }}
           >
-            <div className="flex flex-col gap-4 min-[480px]:flex-row min-[480px]:items-center min-[480px]:justify-between">
+            <div className="flex min-w-0 flex-col gap-4 min-[480px]:flex-row min-[480px]:items-center min-[480px]:justify-between">
               <div>
                 <p className="text-xs uppercase tracking-[0.3em] text-brand-100/80">
                   Premium Portfolio
@@ -155,7 +155,7 @@ function HeroSection({ hero }) {
             </div>
 
             <div className="dark-surface rounded-[28px] p-5">
-              <div className="flex items-center justify-between gap-4">
+              <div className="flex flex-col gap-2 min-[480px]:flex-row min-[480px]:items-center min-[480px]:justify-between">
                 <p className="text-sm uppercase tracking-[0.28em] text-slate-400">
                   Model pipeline
                 </p>

@@ -17,7 +17,7 @@ function SkillsSection({ skills }) {
         {skills.map((skillGroup) => (
           <motion.article
             key={skillGroup.category}
-            className="glass-card p-6 md:p-8"
+            className="glass-card min-w-0 p-5 md:p-8"
             whileHover={{ y: -8, borderColor: 'rgba(115,216,255,0.3)' }}
             {...staggerItem()}
           >
