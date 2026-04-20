@@ -129,6 +129,24 @@ export const portfolioData = {
       liveUrl: 'https://whisper-doc.onrender.com/',
     },
     {
+      name: '3D Solar System',
+      category: 'Interactive Frontend Visualization',
+      description:
+        'An immersive 3D solar system experience that visualizes planetary orbits, relative motion, and space-inspired interactions through pure frontend engineering.',
+      techStack: ['HTML5', 'CSS3', 'JavaScript', 'jQuery', 'Responsive Design', '3D Transforms'],
+      features: [
+        'Interactive 2D and 3D viewing modes with smooth transitions.',
+        'Planet-wise focus navigation with animated orbital motion.',
+        'User controls for speed, size, distance, and zoom-based exploration.',
+        'Responsive scaling that adapts the solar system layout across screen sizes.',
+        'Rich visual styling using CSS animations, shadows, rings, and orbit effects.',
+      ],
+      impact:
+        'Built a visually engaging space simulation that combines animation, interaction design, and frontend creativity into an educational and immersive user experience. Showcases strong command over CSS motion, layout control, and interactive UI behavior without relying on heavy frameworks.',
+      githubUrl: 'https://github.com/akashrajput2433/3D-Solar-System/',
+      liveUrl: 'https://akashrajput2433.github.io/3D-Solar-System/',
+    },
+    {
       name: 'Project Two',
       category: 'Frontend',
       description:
