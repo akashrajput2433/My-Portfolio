@@ -20,8 +20,8 @@ function HeroSection({ hero }) {
   }, [hero.role])
 
   return (
-    <section id="home" className="section-shell pb-8 pt-10 md:pt-14">
-      <div className="grid items-center gap-8 lg:grid-cols-[1.15fr_0.85fr] lg:gap-12">
+    <section id="home" className="section-shell pb-8 pt-8 md:pt-14">
+      <div className="grid items-center gap-6 lg:grid-cols-[1.15fr_0.85fr] lg:gap-12">
         <motion.div
           className="space-y-6 md:space-y-8"
           initial="hidden"
@@ -53,7 +53,7 @@ function HeroSection({ hero }) {
               <Sparkles size={16} className="text-brand-300" />
               AI/ML Engineer Portfolio
             </p>
-            <h1 className="max-w-3xl text-4xl font-semibold leading-none tracking-[-0.05em] text-white min-[480px]:text-5xl sm:text-6xl lg:text-7xl">
+            <h1 className="max-w-3xl text-[2.5rem] font-semibold leading-[0.92] tracking-[-0.05em] text-white min-[480px]:text-5xl sm:text-6xl lg:text-7xl">
               {hero.name}
             </h1>
             <h2 className="typing-cursor min-h-[2.25rem] text-xl font-medium tracking-tight text-slate-200 min-[480px]:text-2xl md:min-h-[3rem] md:text-3xl">
@@ -116,7 +116,7 @@ function HeroSection({ hero }) {
         </motion.div>
 
         <motion.div
-          className="glass-card relative overflow-hidden p-5 sm:p-8"
+          className="glass-card relative overflow-hidden p-4 sm:p-8"
           initial={{ opacity: 0, x: 40, scale: 0.96 }}
           animate={{ opacity: 1, x: 0, scale: 1 }}
           transition={{ duration: 0.8, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}

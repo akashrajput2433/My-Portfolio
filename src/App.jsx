@@ -19,7 +19,7 @@ function App() {
 
   useEffect(() => {
     const savedTheme = window.localStorage.getItem('portfolio-theme')
-    const preferredTheme = savedTheme || 'light'
+    const preferredTheme = savedTheme || (window.innerWidth < 768 ? 'dark' : 'light')
 
     setTheme(preferredTheme)
     document.documentElement.dataset.theme = preferredTheme
@@ -68,12 +68,12 @@ function App() {
       <div className="theme-shell relative overflow-hidden">
         <div className="pointer-events-none absolute inset-0">
           <NetworkBackground />
-          <div className="theme-orb-primary absolute left-1/2 top-0 h-[32rem] w-[32rem] -translate-x-1/2 rounded-full blur-3xl" />
-          <div className="theme-orb-secondary absolute right-0 top-40 h-72 w-72 rounded-full blur-3xl" />
+          <div className="theme-orb-primary absolute left-1/2 top-0 h-[18rem] w-[18rem] -translate-x-1/2 rounded-full blur-3xl md:h-[32rem] md:w-[32rem]" />
+          <div className="theme-orb-secondary absolute right-[-4rem] top-32 h-44 w-44 rounded-full blur-3xl md:right-0 md:top-40 md:h-72 md:w-72" />
           <div className="ai-grid-overlay absolute inset-0 opacity-[0.14]" />
           <div className="absolute inset-0 bg-hero-grid bg-[length:56px_56px] opacity-[0.05]" />
-          <div className="absolute left-[12%] top-[18%] h-24 w-24 rounded-full border border-brand-300/15" />
-          <div className="absolute right-[14%] top-[28%] h-16 w-16 rounded-full border border-brand-300/15" />
+          <div className="absolute left-[8%] top-[14%] hidden h-24 w-24 rounded-full border border-brand-300/15 md:block" />
+          <div className="absolute right-[14%] top-[28%] hidden h-16 w-16 rounded-full border border-brand-300/15 md:block" />
         </div>
         <Navbar navigation={portfolioData.navigation} theme={theme} onToggleTheme={toggleTheme} />
         <main className="relative z-10">

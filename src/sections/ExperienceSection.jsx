@@ -94,9 +94,9 @@ function ExperienceSection({ experience }) {
                               target="_blank"
                               rel="noreferrer"
                             >
-                              <span className="inline-flex items-center gap-3">
+                              <span className="inline-flex min-w-0 items-center gap-3">
                                 <Building2 size={16} className="text-brand-200" />
-                                <span>{activeExperience.company}</span>
+                                <span className="truncate sm:whitespace-normal">{activeExperience.company}</span>
                               </span>
                               <span className="inline-flex items-center gap-1 text-[0.72rem] uppercase tracking-[0.18em] text-brand-100/80 transition group-hover:text-brand-50">
                                 Visit

@@ -53,10 +53,12 @@
 
   html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
   }
 
   body {
     @apply m-0 min-h-screen min-w-[320px] font-sans antialiased;
+    overflow-x: hidden;
   }
 
   a {
@@ -73,6 +75,7 @@
     @apply min-h-screen transition-colors duration-500;
     color: var(--shell-text);
     background-image: var(--shell-bg);
+    overflow-x: clip;
   }
 
   .theme-input {
@@ -643,6 +646,97 @@
 
   :root[data-theme='light'] .section-divider::after {
     opacity: 0.62;
+  }
+
+  @media (max-width: 767px) {
+    .network-background {
+      opacity: 0.42;
+      mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.82), rgba(0, 0, 0, 0.55) 55%, rgba(0, 0, 0, 0.82));
+    }
+
+    .network-cluster:nth-child(n + 9) {
+      display: none;
+    }
+
+    .network-visibility-zone-left,
+    .network-visibility-zone-right {
+      width: 12rem;
+      opacity: 0.45;
+    }
+
+    .network-visibility-zone-center-top,
+    .network-visibility-zone-center-bottom {
+      display: none;
+    }
+
+    .section-shell {
+      width: min(1120px, calc(100% - 0.9rem));
+      padding-top: 3.5rem;
+      padding-bottom: 3.5rem;
+    }
+
+    .section-divider::before {
+      width: calc(100% - 0.8rem);
+    }
+
+    .section-divider::after {
+      height: 9rem;
+      inset: -0.5rem 0 auto 0;
+      opacity: 0.56;
+    }
+
+    .section-panel {
+      border-radius: 28px;
+      padding: 1rem 0.8rem 1.25rem;
+    }
+
+    .section-panel::before {
+      background-size: 28px 28px;
+      opacity: 0.38;
+    }
+
+    .section-panel::after {
+      right: -2rem;
+      top: -2rem;
+      width: 9rem;
+      height: 9rem;
+    }
+
+    .section-heading {
+      margin-bottom: 1.25rem;
+      gap: 0.65rem;
+    }
+
+    .section-title {
+      font-size: 1.85rem;
+      line-height: 1.05;
+    }
+
+    .section-description {
+      font-size: 0.92rem;
+      line-height: 1.55rem;
+    }
+
+    .glass-card {
+      border-radius: 24px;
+    }
+
+    .section-switcher {
+      border-radius: 24px;
+      padding: 0.8rem;
+      gap: 0.5rem;
+    }
+
+    .selector-pill {
+      padding: 0.7rem 0.95rem;
+      font-size: 0.64rem;
+      letter-spacing: 0.16em;
+    }
+
+    .pill-tag {
+      max-width: 100%;
+      word-break: break-word;
+    }
   }
 }
 
