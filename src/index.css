@@ -102,6 +102,9 @@
   .section-panel li {
     text-align: justify;
     text-justify: inter-word;
+    hyphens: auto;
+    overflow-wrap: anywhere;
+    word-spacing: normal;
   }
 
   .network-background {
@@ -649,12 +652,6 @@
   }
 
   @media (max-width: 767px) {
-    .section-panel p,
-    .section-panel li {
-      text-align: left;
-      text-justify: auto;
-    }
-
     .network-background {
       opacity: 0.42;
       mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.82), rgba(0, 0, 0, 0.55) 55%, rgba(0, 0, 0, 0.82));
@@ -723,6 +720,14 @@
       line-height: 1.55rem;
     }
 
+    .project-impact-copy {
+      font-size: 0.95rem;
+      line-height: 1.9;
+      hyphens: auto;
+      overflow-wrap: anywhere;
+      text-wrap: pretty;
+    }
+
     .section-eyebrow {
       padding: 0.65rem 0.9rem;
       font-size: 0.62rem;
@@ -760,6 +765,14 @@
     .primary-button,
     .secondary-button {
       min-width: 0;
+    }
+
+    .footer-shell {
+      border-radius: 28px;
+    }
+
+    .footer-link {
+      width: 100%;
     }
   }
 }

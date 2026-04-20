@@ -110,9 +110,9 @@ function ExperienceSection({ experience }) {
                             </span>
                           )}
                         </div>
-                        <div className="flex items-center gap-3 rounded-2xl border border-white/10 bg-white/5 px-4 py-3">
+                        <div className="flex min-w-0 items-start gap-3 rounded-2xl border border-white/10 bg-white/5 px-4 py-3 sm:items-center">
                           <CalendarDays size={16} className="text-brand-200" />
-                          <span className="text-sm text-slate-200">{activeExperience.duration}</span>
+                          <span className="break-words text-sm leading-6 text-slate-200">{activeExperience.duration}</span>
                         </div>
                       </div>
                     </div>
