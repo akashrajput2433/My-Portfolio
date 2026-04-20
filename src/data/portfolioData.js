@@ -130,7 +130,7 @@ export const portfolioData = {
     },
     {
       name: '3D Solar System',
-      category: 'Interactive Frontend Visualization',
+      category: '3D Experience',
       description:
         'An immersive 3D solar system experience that visualizes planetary orbits, relative motion, and space-inspired interactions through pure frontend engineering.',
       techStack: ['HTML5', 'CSS3', 'JavaScript', 'jQuery', 'Responsive Design', '3D Transforms'],
@@ -145,17 +145,6 @@ export const portfolioData = {
         'Built a visually engaging space simulation that combines animation, interaction design, and frontend creativity into an educational and immersive user experience. Showcases strong command over CSS motion, layout control, and interactive UI behavior without relying on heavy frameworks.',
       githubUrl: 'https://github.com/akashrajput2433/3D-Solar-System/',
       liveUrl: 'https://akashrajput2433.github.io/3D-Solar-System/',
-    },
-    {
-      name: 'Project Two',
-      category: 'Frontend',
-      description:
-        'A second project card to showcase variety, design quality, and engineering depth.',
-      techStack: ['JavaScript', 'API Integration', 'CSS'],
-      features: ['Interactive UX', 'Reusable components', 'Optimized layout'],
-      impact: 'Designed to highlight interface clarity, component thinking, and user-friendly interaction.',
-      githubUrl: 'https://github.com/your-username/project-two',
-      liveUrl: '',
     },
   ],
   experience: [
@@ -258,12 +247,6 @@ export const portfolioData = {
       issuer: 'Anthropic',
       note: 'Completed the Claude Code in Action certification, strengthening hands-on understanding of AI-assisted development workflows, modern coding productivity, and practical usage of Claude for real engineering tasks.',
       link: 'https://verify.skilljar.com/c/hf4vd6h82yio',
-    },
-    {
-      title: 'Certification Placeholder 03',
-      issuer: 'Platform / Organization',
-      note: 'Add your third certification here for a stronger and more complete certification profile.',
-      link: '',
     },
   ],
   achievements: [
