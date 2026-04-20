@@ -25,9 +25,7 @@ This portfolio is designed with a strong emphasis on premium UI, smooth interact
 
 ## 🚀 Live Demo
 
-**Portfolio Repository:** [My Portfolio](https://github.com/akashrajput2433/My-Portfolio)
-
-> Note: Add your deployed portfolio URL here once your site is hosted on Vercel or Netlify.
+**Live Portfolio:** [my-portfolio-three-green-46.vercel.app](https://my-portfolio-three-green-46.vercel.app/)
 
 ### Portfolio Highlights
 
