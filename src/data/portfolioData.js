@@ -266,6 +266,7 @@ export const portfolioData = {
       { label: 'GitHub', href: 'https://github.com/akashrajput2433' },
       { label: 'LinkedIn', href: 'https://www.linkedin.com/in/akashrajput2433/' },
       { label: 'Email', href: 'mailto:akashdos161099@gmail.com' },
+      { label: 'LeetCode', href: 'https://leetcode.com/u/akashrajput2433/' },
     ],
   },
 }
