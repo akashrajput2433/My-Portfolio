@@ -49,7 +49,7 @@ function HeroSection({ hero }) {
               show: { opacity: 1, y: 0, transition: { duration: 0.65 } },
             }}
           >
-            <p className="inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-[0.34em] text-brand-100/90">
+            <p className="hero-kicker inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-[0.34em] text-brand-100/90">
               <Sparkles size={16} className="text-brand-300" />
               AI/ML Engineer Portfolio
             </p>
