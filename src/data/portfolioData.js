@@ -26,7 +26,7 @@ export const portfolioData = {
   },
   about: {
     intro:
-      'An AI/ML Engineer and Software Developer with 1+ years of experience building secure, scalable, and high-impact software solutions.',
+      'An AI/ML Engineer and Software Developer with 2+ years of experience building secure, scalable, and high-impact software solutions.',
     background:
       'My work spans enterprise application development, backend architecture, APIs, and AI-powered systems, with hands-on experience in Java, C#, Python, ASP.NET Core, SQL Server, and modern cloud-based workflows.',
     objective:
@@ -39,7 +39,7 @@ export const portfolioData = {
     quickFacts: [
       { label: 'Location', value: 'India' },
       { label: 'Preferred Role', value: 'AI/ML Engineer / Data Scientist' },
-      { label: 'Experience', value: '1+ Years' },
+      { label: 'Experience', value: '2+ Years' },
       { label: 'Specialization', value: 'AI, ML & Data-Driven Systems' },
       { label: 'Work Style', value: 'Clean, scalable, collaborative' },
     ],
