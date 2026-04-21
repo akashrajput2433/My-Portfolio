@@ -1,34 +1,13 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
-  <defs>
-    <linearGradient id="card" x1="10" y1="8" x2="56" y2="58" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#020617" />
-      <stop offset="1" stop-color="#111827" />
-    </linearGradient>
-    <linearGradient id="edge" x1="14" y1="12" x2="50" y2="52" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#FDE68A" />
-      <stop offset="1" stop-color="#F59E0B" />
-    </linearGradient>
-    <linearGradient id="glow" x1="20" y1="18" x2="44" y2="46" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#FDE68A" stop-opacity=".55" />
-      <stop offset="1" stop-color="#F59E0B" stop-opacity=".08" />
-    </linearGradient>
-    <linearGradient id="monogram" x1="18" y1="14" x2="42" y2="48" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#FFFFFF" />
-      <stop offset="1" stop-color="#E5E7EB" />
-    </linearGradient>
-  </defs>
-
-  <rect x="4" y="4" width="56" height="56" rx="20" fill="url(#card)" />
-  <rect x="5" y="5" width="54" height="54" rx="19" stroke="url(#edge)" stroke-opacity=".38" />
-  <rect x="10" y="10" width="44" height="44" rx="15" fill="url(#glow)" />
-
-  <path
-    d="M18.5 48 28 16h3.4L41 48h-5.2l-1.75-6.25h-9.56L22.7 48h-4.2Zm7-10.9h7.5l-2.92-10.82a34 34 0 0 1-.78-2.95h-.11c-.23.87-.5 1.85-.8 2.95L25.5 37.1Z"
-    fill="url(#monogram)"
-  />
-  <path
-    d="M44.2 18.8c-2.85 0-4.9 1.53-4.9 3.97 0 2.3 1.62 3.27 4.3 4l1.54.42c1.84.5 2.63 1.06 2.63 2.26 0 1.35-1.1 2.14-3.06 2.14-1.73 0-3.22-.61-4.7-1.83v4.36a9 9 0 0 0 4.86 1.2c4.45 0 7.16-2.16 7.16-5.8 0-2.6-1.54-4.15-4.92-5.06l-1.6-.44c-1.36-.37-1.95-.82-1.95-1.71 0-.94.79-1.64 2.34-1.64 1.53 0 2.82.49 4.14 1.48v-4.14a8 8 0 0 0-3.84-.86Z"
-    fill="#FBBF24"
-  />
-  <circle cx="48.5" cy="15.5" r="2.6" fill="#FDE68A" />
+  <rect width="64" height="64" rx="8" fill="#050505" />
+  <text
+    x="32"
+    y="43"
+    fill="#FFFFFF"
+    font-family="Arial, Helvetica, sans-serif"
+    font-size="31"
+    font-weight="700"
+    letter-spacing="-2.6"
+    text-anchor="middle"
+  >AS</text>
 </svg>
