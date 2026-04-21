@@ -89,16 +89,16 @@ function ExperienceSection({ experience }) {
                         <div className="rounded-2xl border border-white/10 bg-white/5 px-4 py-3">
                           {activeExperience.companyUrl ? (
                             <a
-                              className="group inline-flex w-full flex-col items-start gap-2 rounded-xl border border-brand-300/15 bg-brand-400/10 px-3 py-2 text-sm text-slate-100 transition hover:border-brand-300/35 hover:bg-brand-400/15 hover:text-brand-50 sm:flex-row sm:items-center sm:justify-between sm:gap-3"
+                              className="group grid w-full min-w-0 grid-cols-1 gap-2 overflow-hidden rounded-xl border border-brand-300/15 bg-brand-400/10 px-3 py-2 text-sm text-slate-100 transition hover:border-brand-300/35 hover:bg-brand-400/15 hover:text-brand-50 sm:grid-cols-[minmax(0,1fr)_auto] sm:items-center"
                               href={activeExperience.companyUrl}
                               target="_blank"
                               rel="noreferrer"
                             >
-                              <span className="inline-flex min-w-0 items-center gap-3">
-                                <Building2 size={16} className="text-brand-200" />
-                                <span className="truncate sm:whitespace-normal">{activeExperience.company}</span>
+                              <span className="grid min-w-0 grid-cols-[auto_minmax(0,1fr)] items-center gap-3">
+                                <Building2 size={16} className="shrink-0 text-brand-200" />
+                                <span className="min-w-0 break-words leading-6">{activeExperience.company}</span>
                               </span>
-                              <span className="inline-flex items-center gap-1 pl-7 text-[0.72rem] uppercase tracking-[0.18em] text-brand-100/80 transition group-hover:text-brand-50 sm:pl-0">
+                              <span className="inline-flex w-fit items-center gap-1 justify-self-start pl-7 text-[0.72rem] uppercase tracking-[0.18em] text-brand-100/80 transition group-hover:text-brand-50 sm:justify-self-end sm:pl-0">
                                 Visit
                                 <ArrowUpRight size={14} />
                               </span>

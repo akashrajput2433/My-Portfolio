@@ -745,6 +745,14 @@
       min-width: 0;
     }
 
+    .glass-card a,
+    .glass-card span,
+    .glass-card p,
+    .glass-card li,
+    .glass-card h3 {
+      max-width: 100%;
+    }
+
     .section-switcher {
       border-radius: 24px;
       padding: 0.8rem;
