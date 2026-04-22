@@ -19,7 +19,7 @@ function Footer({ socialLinks }) {
               Let&apos;s Build Something Meaningful
             </p>
             <p className="max-w-xl text-sm leading-7 text-slate-300 md:text-base">
-              Crafted to feel premium, credible, and instantly recruiter-friendly.
+              Designed to reflect clarity, credibility, and a distinctly premium professional identity.
             </p>
             <div className="flex flex-wrap gap-2">
               <span className="rounded-full border border-white/10 bg-white/5 px-3 py-1.5 text-xs uppercase tracking-[0.18em] text-slate-300">

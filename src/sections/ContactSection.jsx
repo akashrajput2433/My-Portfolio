@@ -27,12 +27,12 @@ function ContactSection({ contact }) {
       <div className="section-panel">
         <SectionHeading
           eyebrow="Contact"
-          title="Let’s build something"
-          description="Reach out for roles, collaborations, or AI product discussions."
+          title="Start a meaningful conversation"
+          description="Connect for AI/ML, software engineering, and high-impact opportunities."
         />
         <motion.div className="grid gap-6 lg:grid-cols-[0.85fr_1.15fr]" {...staggerContainer(0.12)}>
         <motion.article className="glass-card min-w-0 space-y-5 p-5 md:p-8" {...staggerItem()}>
-          <h3 className="text-2xl font-semibold text-white">Contact Details</h3>
+          <h3 className="text-2xl font-semibold text-white">Professional Contact Points</h3>
           <p className="text-left leading-7 text-slate-300">
             Always open to meaningful conversations around AI, products, and high-impact opportunities.
           </p>

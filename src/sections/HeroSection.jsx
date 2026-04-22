@@ -51,7 +51,7 @@ function HeroSection({ hero }) {
           >
             <p className="hero-kicker inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-[0.34em] text-brand-100/90">
               <Sparkles size={16} className="text-brand-300" />
-              AI/ML Engineer Portfolio
+              AI/ML & Software Engineer Portfolio
             </p>
             <h1 className="max-w-3xl text-[2.5rem] font-semibold leading-[0.92] tracking-[-0.05em] text-white min-[480px]:text-5xl sm:text-6xl lg:text-7xl">
               {hero.name}
