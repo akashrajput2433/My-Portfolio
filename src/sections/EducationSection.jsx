@@ -1,6 +1,6 @@
 import SectionHeading from '../components/SectionHeading'
 import { motion } from 'framer-motion'
-import { Building2, CalendarDays } from 'lucide-react'
+import { CalendarDays, GraduationCap } from 'lucide-react'
 import AnimatedSection, { staggerContainer, staggerItem } from '../components/AnimatedSection'
 import SectionSideNetwork from '../components/SectionSideNetwork'
 
@@ -27,7 +27,7 @@ function EducationSection({ education }) {
             <div className="space-y-3">
               <div className="inline-flex w-full items-start gap-3 rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-slate-200">
                 <span className="mt-0.5 inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-2xl border border-brand-300/20 bg-brand-400/10 text-brand-100">
-                  <Building2 size={17} />
+                  <GraduationCap size={17} />
                 </span>
                 <span className="min-w-0 text-base leading-7 text-slate-300">{item.institution}</span>
               </div>

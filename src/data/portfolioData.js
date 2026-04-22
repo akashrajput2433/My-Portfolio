@@ -230,7 +230,7 @@ export const portfolioData = {
     },
     {
       degree: 'Bachelor of Computer Applications',
-      institution: 'Arcade Business College, Patliputra University, Patna, Bihar',
+      institution: 'Arcade Business College, Patliputra University, Patna',
       year: 'Apr 2019 - May 2022',
       details: ['Percentage: 74.4%'],
     },
