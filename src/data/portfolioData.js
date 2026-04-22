@@ -176,7 +176,7 @@ export const portfolioData = {
       role: 'Associate Software Engineer',
       company: 'Mphasis',
       companyUrl: 'https://www.mphasis.com/home.html',
-      duration: '03/2025 - 07/2025',
+      duration: 'Mar 2025 - Jul 2025',
       summary:
         'Contributed to the ITest Online quiz platform in a fast-paced Agile team, focusing on delivery quality, stable releases, and measurable engineering improvement.',
       highlights: [
@@ -200,7 +200,7 @@ export const portfolioData = {
       role: 'Java Intern / Junior Java Developer',
       company: 'Aicons Engineering Pvt. Ltd.',
       companyUrl: 'https://aicons.in/',
-      duration: '01/2024 - 02/2025',
+      duration: 'Jan 2024 - Feb 2025',
       summary:
         'Built a strong foundation in Core Java development while contributing to backend logic, data structure implementation, SQL integration, and team-based software delivery.',
       highlights: [
@@ -225,13 +225,13 @@ export const portfolioData = {
     {
       degree: 'Master of Computer Applications',
       institution: 'Chitkara University, Rajpura, Punjab',
-      year: '08/2022 - 06/2024',
+      year: 'Jun 2022 - Aug 2024',
       details: ['CGPA: 9.73/10'],
     },
     {
       degree: 'Bachelor of Computer Applications',
       institution: 'Arcade Business College, Patliputra University, Patna, Bihar',
-      year: '08/2019 - 06/2022',
+      year: 'Apr 2019 - May 2022',
       details: ['Percentage: 74.4%'],
     },
   ],

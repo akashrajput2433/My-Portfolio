@@ -1,5 +1,6 @@
 import SectionHeading from '../components/SectionHeading'
 import { motion } from 'framer-motion'
+import { Building2, CalendarDays } from 'lucide-react'
 import AnimatedSection, { staggerContainer, staggerItem } from '../components/AnimatedSection'
 import SectionSideNetwork from '../components/SectionSideNetwork'
 
@@ -23,8 +24,20 @@ function EducationSection({ education }) {
           >
             <p className="text-xs uppercase tracking-[0.28em] text-brand-100/80">Degree</p>
             <h3 className="text-2xl font-semibold text-white">{item.degree}</h3>
-            <p className="text-base text-slate-300">{item.institution}</p>
-            <p className="text-sm text-slate-400">{item.year}</p>
+            <div className="space-y-3">
+              <div className="inline-flex w-full items-start gap-3 rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-slate-200">
+                <span className="mt-0.5 inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-2xl border border-brand-300/20 bg-brand-400/10 text-brand-100">
+                  <Building2 size={17} />
+                </span>
+                <span className="min-w-0 text-base leading-7 text-slate-300">{item.institution}</span>
+              </div>
+              <div className="inline-flex w-full items-center gap-3 rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-slate-200">
+                <span className="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-2xl border border-brand-300/20 bg-brand-400/10 text-brand-100">
+                  <CalendarDays size={17} />
+                </span>
+                <span className="text-sm text-slate-300">{item.year}</span>
+              </div>
+            </div>
             <div className="grid gap-3 pt-2">
               {item.details.map((detail) => (
                 <div
