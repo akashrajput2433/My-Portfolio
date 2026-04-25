@@ -537,7 +537,8 @@
     color: #f8fafc !important;
   }
 
-  :root[data-theme='light'] .resume-popover-hero .text-brand-100\/80 {
+  :root[data-theme='light'] .resume-popover-hero p.text-brand-100\/80,
+  :root[data-theme='light'] .resume-popover-hero span.text-brand-100\/80 {
     color: #dbeafe !important;
   }
 
