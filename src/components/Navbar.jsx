@@ -110,7 +110,7 @@ function Navbar({ navigation, theme, onToggleTheme, resume }) {
                     Resume Access
                   </p>
                   <p className="mt-2 text-sm leading-7 text-slate-200">
-                    Open a polished resume preview or download the latest PDF instantly.
+                    Access a professionally presented resume snapshot or download the latest version instantly.
                   </p>
                 </div>
                 <div className="mt-3 grid gap-2">
