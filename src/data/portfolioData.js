@@ -152,7 +152,7 @@ export const portfolioData = {
       role: 'Associate Software Engineer',
       company: 'Moba Mobile Automation Pvt. Ltd.',
       companyUrl: 'https://moba-automation.co.in/',
-      duration: 'Aug 2025 - Mar 2026',
+      duration: 'Aug 2025 - Apr 2026',
       summary:
         'Built secure, scalable enterprise modules using ASP.NET Core, MVC, and MS SQL Server with a strong focus on performance, access control, and admin efficiency.',
       highlights: [
