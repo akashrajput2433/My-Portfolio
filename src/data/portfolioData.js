@@ -260,6 +260,10 @@ export const portfolioData = {
     email: 'akashdos161099@gmail.com',
     linkedin: 'https://www.linkedin.com/in/akashrajput2433/',
     github: 'https://github.com/akashrajput2433',
+    resume: {
+      href: '/Akash_Singh_Resume.pdf',
+      downloadName: 'Akash-Singh-Resume.pdf',
+    },
     availability: 'Available for AI / Data Scientist opportunities',
     responseTime: 'Usually responds within 24 hours.',
     socialLinks: [

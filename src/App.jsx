@@ -75,7 +75,12 @@ function App() {
           <div className="absolute left-[8%] top-[14%] hidden h-24 w-24 rounded-full border border-brand-300/15 md:block" />
           <div className="absolute right-[14%] top-[28%] hidden h-16 w-16 rounded-full border border-brand-300/15 md:block" />
         </div>
-        <Navbar navigation={portfolioData.navigation} theme={theme} onToggleTheme={toggleTheme} />
+        <Navbar
+          navigation={portfolioData.navigation}
+          theme={theme}
+          onToggleTheme={toggleTheme}
+          resume={portfolioData.contact.resume}
+        />
         <main className="relative z-10">
           <HeroSection hero={portfolioData.hero} />
           <AboutSection about={portfolioData.about} />
