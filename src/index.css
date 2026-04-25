@@ -389,6 +389,27 @@
     background: var(--glass-bg);
   }
 
+  .resume-popover {
+    background:
+      linear-gradient(180deg, rgba(4, 10, 20, 0.96), rgba(7, 14, 27, 0.94));
+    border-color: rgba(125, 211, 252, 0.18);
+    box-shadow:
+      0 30px 90px rgba(2, 8, 23, 0.46),
+      inset 0 1px 0 rgba(255, 255, 255, 0.04);
+    backdrop-filter: saturate(140%) blur(12px);
+  }
+
+  .resume-popover-hero {
+    background:
+      linear-gradient(180deg, rgba(18, 39, 63, 0.9), rgba(11, 24, 42, 0.82));
+  }
+
+  .resume-popover-action {
+    background:
+      linear-gradient(180deg, rgba(255, 255, 255, 0.065), rgba(255, 255, 255, 0.04));
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.03);
+  }
+
   .theme-chip {
     border: 1px solid var(--glass-border);
     background: var(--chip-bg);
@@ -466,6 +487,31 @@
     background: rgba(15, 23, 42, 0.12);
     border-color: rgba(14, 165, 233, 0.28);
     color: #0f172a;
+  }
+
+  :root[data-theme='light'] .resume-popover {
+    background:
+      linear-gradient(180deg, rgba(245, 248, 252, 0.98), rgba(232, 239, 247, 0.97));
+    border-color: rgba(100, 116, 139, 0.2);
+    box-shadow:
+      0 26px 74px rgba(15, 23, 42, 0.16),
+      inset 0 1px 0 rgba(255, 255, 255, 0.74);
+    backdrop-filter: blur(2px);
+  }
+
+  :root[data-theme='light'] .resume-popover-hero {
+    background:
+      linear-gradient(180deg, rgba(221, 235, 248, 0.96), rgba(211, 225, 240, 0.94));
+    border-color: rgba(14, 116, 144, 0.14);
+  }
+
+  :root[data-theme='light'] .resume-popover-action {
+    background:
+      linear-gradient(180deg, rgba(255, 255, 255, 0.92), rgba(239, 244, 250, 0.88));
+    border-color: rgba(148, 163, 184, 0.22);
+    box-shadow:
+      inset 0 1px 0 rgba(255, 255, 255, 0.8),
+      0 10px 24px rgba(15, 23, 42, 0.06);
   }
 
   .nav-link {

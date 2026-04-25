@@ -32,7 +32,7 @@ function Navbar({ navigation, theme, onToggleTheme, resume }) {
     >
       <div className="mx-auto flex w-[min(1120px,calc(100%-1.5rem))] items-center justify-between gap-3 py-4 md:gap-4 md:py-6">
         <motion.a
-          className="theme-chip rounded-full px-4 py-2 text-sm font-semibold tracking-[0.2em] backdrop-blur"
+          className="theme-chip shrink-0 rounded-full px-4 py-2 text-sm font-semibold tracking-[0.2em] backdrop-blur"
           href="#home"
           onClick={closeMenu}
           whileHover={{ y: -2, scale: 1.02 }}
@@ -43,13 +43,13 @@ function Navbar({ navigation, theme, onToggleTheme, resume }) {
 
         <nav
           aria-label="Primary navigation"
-          className="theme-glass hidden rounded-full px-3 py-2 shadow-card backdrop-blur lg:block"
+          className="theme-glass hidden min-w-0 flex-1 rounded-full px-3 py-2 shadow-card backdrop-blur lg:block"
         >
-          <ul className="flex flex-wrap items-center gap-1">
+          <ul className="flex flex-nowrap items-center justify-center gap-1 whitespace-nowrap">
             {navigation.map((item) => (
               <li key={item.href}>
                 <motion.a
-                  className="nav-link inline-flex rounded-full px-4 py-2 text-sm transition hover:bg-white/5"
+                  className="nav-link inline-flex whitespace-nowrap rounded-full px-3 py-2 text-sm transition hover:bg-white/5 xl:px-4"
                   href={item.href}
                   whileHover={{ y: -2 }}
                 >
@@ -60,7 +60,7 @@ function Navbar({ navigation, theme, onToggleTheme, resume }) {
           </ul>
         </nav>
 
-        <div className="flex items-center gap-2">
+        <div className="flex shrink-0 items-center gap-2">
           <motion.button
             className="theme-toggle theme-glass inline-flex h-11 items-center justify-center gap-2 rounded-full px-4 text-sm font-medium backdrop-blur"
             type="button"
@@ -84,7 +84,7 @@ function Navbar({ navigation, theme, onToggleTheme, resume }) {
           </motion.button>
         </div>
 
-        <div className="relative hidden lg:block" ref={resumeMenuRef}>
+        <div className="relative hidden shrink-0 lg:block" ref={resumeMenuRef}>
           <motion.button
             className="secondary-button hidden items-center gap-2 text-xs sm:text-sm lg:inline-flex"
             type="button"
@@ -99,13 +99,13 @@ function Navbar({ navigation, theme, onToggleTheme, resume }) {
           <AnimatePresence>
             {isResumeOpen ? (
               <motion.div
-                className="absolute right-0 top-[calc(100%+0.9rem)] w-[22rem] overflow-hidden rounded-[28px] border border-white/10 bg-slate-950/92 p-3 shadow-[0_24px_80px_rgba(2,8,20,0.45)] backdrop-blur-xl"
+                className="resume-popover absolute right-0 top-[calc(100%+0.9rem)] w-[22rem] overflow-hidden rounded-[28px] border border-white/10 p-3 shadow-[0_24px_80px_rgba(2,8,20,0.45)]"
                 initial={{ opacity: 0, y: 10, scale: 0.96 }}
                 animate={{ opacity: 1, y: 0, scale: 1 }}
                 exit={{ opacity: 0, y: 10, scale: 0.96 }}
                 transition={{ duration: 0.22, ease: [0.22, 1, 0.36, 1] }}
               >
-                <div className="rounded-[22px] border border-brand-300/15 bg-brand-400/10 p-4">
+                <div className="resume-popover-hero rounded-[22px] border border-brand-300/15 p-4">
                   <p className="text-[0.68rem] uppercase tracking-[0.26em] text-brand-100/80">
                     Resume Access
                   </p>
@@ -115,7 +115,7 @@ function Navbar({ navigation, theme, onToggleTheme, resume }) {
                 </div>
                 <div className="mt-3 grid gap-2">
                   <motion.a
-                    className="inline-flex items-center justify-between rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-sm text-slate-100 transition hover:border-brand-300/35 hover:bg-brand-400/10"
+                    className="resume-popover-action inline-flex items-center justify-between rounded-2xl border border-white/10 px-4 py-3 text-sm text-slate-100 transition hover:border-brand-300/35 hover:bg-brand-400/10"
                     href={resume.href}
                     target="_blank"
                     rel="noreferrer"
@@ -129,7 +129,7 @@ function Navbar({ navigation, theme, onToggleTheme, resume }) {
                     <span className="text-[0.68rem] uppercase tracking-[0.18em] text-brand-100/80">Open</span>
                   </motion.a>
                   <motion.a
-                    className="inline-flex items-center justify-between rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-sm text-slate-100 transition hover:border-brand-300/35 hover:bg-brand-400/10"
+                    className="resume-popover-action inline-flex items-center justify-between rounded-2xl border border-white/10 px-4 py-3 text-sm text-slate-100 transition hover:border-brand-300/35 hover:bg-brand-400/10"
                     href={resume.href}
                     download={resume.downloadName}
                     onClick={() => setIsResumeOpen(false)}
