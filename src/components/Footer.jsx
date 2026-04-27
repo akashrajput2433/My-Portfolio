@@ -1,5 +1,6 @@
 import { ArrowUpRight, Mail } from 'lucide-react'
 import { motion } from 'framer-motion'
+import { GitHubIcon, LinkedInIcon } from './SocialIcons'
 
 function Footer({ socialLinks }) {
   return (
@@ -57,7 +58,11 @@ function Footer({ socialLinks }) {
                   </>
                 ) : (
                   <>
-                    <span>{link.label}</span>
+                    <span className="inline-flex items-center gap-3">
+                      {link.label === 'GitHub' ? <GitHubIcon size={15} className="text-brand-200" /> : null}
+                      {link.label === 'LinkedIn' ? <LinkedInIcon size={15} className="text-brand-200" /> : null}
+                      <span>{link.label}</span>
+                    </span>
                     <span className="inline-flex items-center gap-1 text-[0.68rem] uppercase tracking-[0.18em] text-brand-100/80 transition group-hover:text-brand-50">
                       Visit
                       <ArrowUpRight size={13} />

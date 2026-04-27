@@ -1,8 +1,9 @@
 import SectionHeading from '../components/SectionHeading'
 import { motion } from 'framer-motion'
-import { ArrowUpRight, Globe, Mail } from 'lucide-react'
+import { ArrowUpRight, Mail } from 'lucide-react'
 import AnimatedSection, { staggerContainer, staggerItem } from '../components/AnimatedSection'
 import SectionSideNetwork from '../components/SectionSideNetwork'
+import { GitHubIcon, LinkedInIcon } from '../components/SocialIcons'
 
 function ContactSection({ contact }) {
   const handleSubmit = (event) => {
@@ -62,7 +63,7 @@ function ContactSection({ contact }) {
             rel="noreferrer"
           >
             <span className="inline-flex min-w-0 items-center gap-3">
-              <Globe size={16} className="text-brand-200" />
+              <LinkedInIcon size={16} className="text-brand-200" />
               <span>LinkedIn</span>
             </span>
             <span className="inline-flex items-center gap-1 pl-7 text-[0.72rem] uppercase tracking-[0.18em] text-brand-100/80 transition group-hover:text-brand-50 sm:pl-0">
@@ -77,7 +78,7 @@ function ContactSection({ contact }) {
             rel="noreferrer"
           >
             <span className="inline-flex min-w-0 items-center gap-3">
-              <Globe size={16} className="text-brand-200" />
+              <GitHubIcon size={16} className="text-brand-200" />
               <span>GitHub</span>
             </span>
             <span className="inline-flex items-center gap-1 pl-7 text-[0.72rem] uppercase tracking-[0.18em] text-brand-100/80 transition group-hover:text-brand-50 sm:pl-0">
