@@ -4,7 +4,7 @@ import { ChevronLeft, ChevronRight } from 'lucide-react'
 import { useState } from 'react'
 import AnimatedSection, { staggerContainer, staggerItem } from '../components/AnimatedSection'
 import SectionSideNetwork from '../components/SectionSideNetwork'
-import { GitHubIcon } from '../components/SocialIcons'
+import { GitHubIcon, LiveDemoIcon } from '../components/SocialIcons'
 
 function ProjectsSection({ projects }) {
   const [activeIndex, setActiveIndex] = useState(0)
@@ -104,13 +104,14 @@ function ProjectsSection({ projects }) {
                       </motion.a>
                       {activeProject.liveUrl ? (
                         <motion.a
-                          className="secondary-button w-full min-[480px]:w-auto"
+                          className="secondary-button w-full gap-2 min-[480px]:w-auto"
                           href={activeProject.liveUrl}
                           target="_blank"
                           rel="noreferrer"
                           whileHover={{ y: -3, scale: 1.02 }}
                           whileTap={{ scale: 0.98 }}
                         >
+                          <LiveDemoIcon size={16} />
                           Live Demo
                         </motion.a>
                       ) : (

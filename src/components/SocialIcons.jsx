@@ -31,3 +31,49 @@ export function LinkedInIcon({ size = 16, className = '' }) {
     </svg>
   )
 }
+
+export function LeetCodeIcon({ size = 16, className = '' }) {
+  return (
+    <svg
+      aria-hidden="true"
+      className={iconClassName(className)}
+      viewBox="0 0 24 24"
+      width={size}
+      height={size}
+      fill="none"
+    >
+      <path
+        d="M15.58 5.17 19.9 9.5a1.75 1.75 0 0 1 0 2.47l-4.32 4.33"
+        stroke="currentColor"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M13.18 18.72 9.6 18.7a1.74 1.74 0 0 1-1.23-.5l-4.3-4.27a1.75 1.75 0 0 1 0-2.48l4.3-4.26a1.73 1.73 0 0 1 1.23-.5h3.58"
+        stroke="currentColor"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path d="M8.8 12h8.4" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
+    </svg>
+  )
+}
+
+export function LiveDemoIcon({ size = 16, className = '' }) {
+  return (
+    <svg
+      aria-hidden="true"
+      className={iconClassName(className)}
+      viewBox="0 0 24 24"
+      width={size}
+      height={size}
+      fill="none"
+    >
+      <rect x="3" y="4.5" width="18" height="13" rx="2.5" stroke="currentColor" strokeWidth="1.9" />
+      <path d="M9.75 20h4.5" stroke="currentColor" strokeWidth="1.9" strokeLinecap="round" />
+      <path d="m11 9 4 2.5-4 2.5V9Z" fill="currentColor" />
+    </svg>
+  )
+}
