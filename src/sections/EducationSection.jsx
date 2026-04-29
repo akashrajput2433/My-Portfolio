@@ -1,6 +1,6 @@
 import SectionHeading from '../components/SectionHeading'
 import { motion } from 'framer-motion'
-import { CalendarDays, GraduationCap } from 'lucide-react'
+import { Award, BarChart3, CalendarDays, GraduationCap } from 'lucide-react'
 import AnimatedSection, { staggerContainer, staggerItem } from '../components/AnimatedSection'
 import SectionSideNetwork from '../components/SectionSideNetwork'
 
@@ -48,7 +48,18 @@ function EducationSection({ education }) {
                       : 'rounded-2xl border border-white/10 bg-white/5 px-4 py-3 text-sm leading-7 text-slate-200'
                   }
                 >
-                  {detail}
+                  <span className="inline-flex items-center gap-3">
+                    <span
+                      className={`inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-2xl border ${
+                        detail.startsWith('CGPA')
+                          ? 'border-brand-200/30 bg-white/10 text-brand-50'
+                          : 'border-brand-300/20 bg-brand-400/10 text-brand-100'
+                      }`}
+                    >
+                      {detail.startsWith('CGPA') ? <Award size={17} /> : <BarChart3 size={17} />}
+                    </span>
+                    <span>{detail}</span>
+                  </span>
                 </div>
               ))}
             </div>
