@@ -1,9 +1,17 @@
 import SectionHeading from '../components/SectionHeading'
 import { motion } from 'framer-motion'
+import { Bot, BriefcaseBusiness, Code2, Database } from 'lucide-react'
 import AnimatedSection, { staggerContainer, staggerItem } from '../components/AnimatedSection'
 import SectionSideNetwork from '../components/SectionSideNetwork'
 
 function SkillsSection({ skills }) {
+  const categoryIcons = {
+    'Programming Languages': Code2,
+    'Frameworks, Backend & Databases': Database,
+    'Tools & AI Platforms': Bot,
+    'Core Strengths': BriefcaseBusiness,
+  }
+
   return (
     <AnimatedSection id="skills" className="section-shell section-divider section-tone-warm">
       <SectionSideNetwork variant="warm" />
@@ -14,7 +22,10 @@ function SkillsSection({ skills }) {
           description="A focused mix of AI, backend, frontend, data, and developer tools."
         />
         <motion.div className="grid gap-6 md:grid-cols-2" {...staggerContainer(0.1)}>
-        {skills.map((skillGroup) => (
+        {skills.map((skillGroup) => {
+          const Icon = categoryIcons[skillGroup.category] ?? Code2
+
+          return (
           <motion.article
             key={skillGroup.category}
             className="glass-card min-w-0 p-5 md:p-8"
@@ -22,7 +33,12 @@ function SkillsSection({ skills }) {
             {...staggerItem()}
           >
             <div className="mb-6 flex items-center justify-between gap-4">
-              <h3 className="text-xl font-semibold text-white">{skillGroup.category}</h3>
+              <h3 className="inline-flex items-center gap-3 text-xl font-semibold text-white">
+                <span className="inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl border border-brand-300/20 bg-brand-400/10 text-brand-100">
+                  <Icon size={19} />
+                </span>
+                <span>{skillGroup.category}</span>
+              </h3>
               <span className="rounded-full bg-brand-400/10 px-3 py-1 text-xs uppercase tracking-[0.2em] text-brand-100">
                 {skillGroup.level}
               </span>
@@ -51,7 +67,8 @@ function SkillsSection({ skills }) {
               />
             </div>
           </motion.article>
-        ))}
+          )
+        })}
         </motion.div>
       </div>
     </AnimatedSection>
