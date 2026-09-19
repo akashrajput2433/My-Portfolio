@@ -248,6 +248,12 @@ export const portfolioData = {
       note: 'Completed the Claude Code in Action certification, strengthening hands-on understanding of AI-assisted development workflows, modern coding productivity, and practical usage of Claude for real engineering tasks.',
       link: 'https://verify.skilljar.com/c/hf4vd6h82yio',
     },
+    {
+      title: 'Generative AI Mastermind Workshop',
+      issuer: 'Outskill',
+      note: 'Successfully completed the Generative AI Mastermind Workshop, strengthening practical understanding of modern generative AI concepts, workflows, and applied innovation.',
+      link: '/Akash_Kumar_Certificate.pdf',
+    },
   ],
   achievements: [
     {

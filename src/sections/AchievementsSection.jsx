@@ -94,9 +94,9 @@ function AchievementsSection({ certifications, achievements }) {
                       href={activeCertification.link || '#'}
                       target="_blank"
                       rel="noreferrer"
-                      aria-label={`Visit ${activeCertification.title} certificate`}
+                      aria-label={`View ${activeCertification.title} certificate`}
                     >
-                      Visit
+                      View Certificate
                       <ArrowUpRight size={14} />
                     </a>
                     <div className="flex flex-wrap items-center gap-2">
